@@ -25,8 +25,7 @@ btn.addEventListener("click", (e) => {
   });
     container.querySelectorAll('#upd').forEach(upd => {
         upd.addEventListener('click', (e) => {
-          const val = prompt('Modifier:')
-          e.currentTarget.parentElement.innerHTML = val+ "<button id='del'>Supprimer</button><button id='upd'>Modifier</button>"
+          e.currentTarget.parentElement.innerHTML =  prompt('Modifier:') +"<button id='del'>Supprimer</button><button id='upd'>Modifier</button>"
         })
     })
    
